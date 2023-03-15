@@ -894,4 +894,7 @@ p{
     .img-company img{
         margin-left: 2rem;
     }
+    .p-btns{
+        display: inline-block;
+    }
 }
