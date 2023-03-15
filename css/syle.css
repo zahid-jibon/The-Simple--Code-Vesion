@@ -27,6 +27,11 @@ h3{
     
 }
 
+h4{
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
 a{
     text-decoration: none;
 }
@@ -67,6 +72,10 @@ p{
 
 .grid-four-column{
     grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-five-column{
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .grid-six-column{
@@ -456,6 +465,16 @@ header{
 
 
 /* latest */
+.section-latest{
+    background-color: #F6F6F6;
+}
+
+.lat-lat{
+    background-color: #FFFFFF;
+    padding: 1rem 1rem;
+    width: 100%;
+}
+
 .section-latest-img{
     display: flex;
     justify-content: center;
@@ -477,3 +496,184 @@ header{
     
 }
 
+
+/* testimonial */
+.testimonial-section{
+    color: rgb(252, 252, 252);
+    margin-top: 30px;
+    background-blend-mode: darken;
+    background: rgba(13, 31, 49, 0.9)url(../image/images.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px; 
+    background-position: center;
+}
+
+.testimonial{
+    position: relative;
+    max-width: 900px;
+    width: 100%;
+    padding: 50px 0;
+    row-gap: 30px;
+}
+
+.test-head{
+    text-align: center;
+    align-items: center;
+    font-size: 50px;
+    margin-bottom: 15px;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.test-para1{
+    text-align: center;
+    padding: 0 100px;
+    font-size: 15px;
+    font-weight: 200;
+    color: aliceblue;
+}
+
+.test-para2{
+    text-align: center;
+    padding: 0 100px;
+    font-size: 15px;
+    font-weight: 100;
+    color: aliceblue;
+}
+
+.test-head2{
+    text-align: center;
+    padding: 0 100px;
+    font-size: 15px;
+    font-weight: 300;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+.test-head3{
+    text-align: center;
+    padding: 0 100px;
+    font-size: 15px;
+    font-weight: 200;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+/* perfect */
+.per-head{
+    color: #252525;
+    font-weight: 200;
+}
+
+.perfect-img{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    gap: 2rem;
+}
+
+.per-para1{
+    color: #222121;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.per-para2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #222121;
+    font-weight: 200;
+    font-size: 1.8rem;
+}
+
+.footer-section{
+    background-color: #262626;
+    transition: all o.7s linear;
+}
+
+.foot{
+    margin: 1rem 1.5rem;
+}
+
+.footer-section h2{
+    color: #F5F5F5;
+    margin-bottom: 1rem;
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+}
+
+.f-img img{
+    width: 75%;
+    padding: 2rem 1rem;
+}
+
+.f-para{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.para1{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.int-para{
+    color: #777777;
+    font-size: 2em;
+    cursor: pointer;
+    transition: all o.4s linear;
+    font-weight: 200;
+}
+
+.int-para:hover{
+    color: #2680A7;
+}
+
+.cmnt-boc{
+    background-color: #212121;
+    border: 1px solid black;
+    padding: 0.8rem 0;
+    margin: 1rem 0;
+}
+
+.f-credit{
+    background-color: black;
+}
+
+.f-social-icons{
+    margin: 0 2rem;
+    text-align: center;
+}
+
+.f-social-icons img{
+    width: 3rem;
+    height: 3rem;
+    background-color: #333333;
+    gap: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.f-social-icons img:hover{
+    background-color: #fff1f1;
+    
+}
+
+.f-credits p{
+    font-size: 1.6rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    color: #aca7a7;
+}
