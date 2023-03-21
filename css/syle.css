@@ -99,6 +99,7 @@ p{
     color: #3CC7C6;
     font-size: 18px;
     cursor: pointer;
+    transition: 0.6s;
 }
 
 
@@ -161,7 +162,20 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    animation: slideUp 3s ease-in-out;
+    
 }
+
+@keyframes slideUp {
+    from {
+        transform: translateY(300px);
+    }
+    to {
+        transform: 0;
+    }
+}
+
 
 .hero-heading{
     font-weight: 200;
@@ -183,6 +197,17 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    animation: slideInRight 3s ease-in;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(300px);
+    }
+    to {
+        transform: 0;
+    }
 }
 
 .learn-btn:hover{
@@ -293,12 +318,15 @@ p{
     padding: 2rem 2,5rem;
     background-color: #3CC6C5;
     color: #fff;
+    transition: 0.6s;
+    
 }
 
 .btn-btn:hover{
     border: 1px solid #3CC6C5;
     background-color: transparent;
     color: #3CC6C5;
+    
 }
 
 
@@ -382,6 +410,7 @@ p{
 
 .p-btn{
     color: #313030;
+    transition: 0.6s;
 }
 
 .p-btn:hover{
@@ -390,8 +419,9 @@ p{
 
 /* client */
 .section-client{
-    background-color: white;
+    background-color: #F6F6F6;
     transition: all 0.1s linear;
+    height: 50vh;
 }
 
 .client-para{
@@ -400,15 +430,20 @@ p{
     display: flex;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .img-client img{
     width: 100%;
     position: relative;
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     padding-left: 1rem;
     padding-right: 1rem;
+}
+
+.img-client img:hover{
+    background-color: white;
 }
 
 /* company */
@@ -661,9 +696,21 @@ p{
 .cmnt-boc{
     background-color: #363535;
     border: 1px solid black;
-    padding: 0.8rem 0;
+    padding: 1rem 1rem;
     margin: 1rem 0;
+    
+}
+
+.cmnt-boc a{
+    text-decoration: none;
+    list-style: none;
     color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+}
+
+.cmnt-boc a:hover{
+    color: #2680A7;
 }
 
 .f-credit{
@@ -683,6 +730,7 @@ p{
     margin-left: 1rem;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    transition: 0.6s;
 }
 
 .f-social-icons img:hover{
@@ -704,6 +752,23 @@ p{
 
 
 /* RESPONSIVE */
+
+@media (max-width: 3000px){
+    .container{
+        max-width: 2900;
+        padding: 0 30px;
+    }
+    .logo{
+        margin: auto;
+    }
+
+    .navbar{
+        margin: auto;
+    }
+    .foot{
+        margin: auto;
+    }
+}
 
 @media (max-width: 1500px){
     .container{
